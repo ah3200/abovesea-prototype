@@ -6,6 +6,11 @@
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 85%;
+    width: 90%;
   }
+}
+
+.container .row {
+  margin-left: -0.90rem;
+  margin-right: -0.90rem;
 }
