@@ -9,17 +9,31 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
 </head>
 <body>
   <nav class="blue-grey" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" placeholder="Search" required>
+              <label for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </li>
+        <li><a class="waves-effect waves-light btn">Write a story</a></li>
+        <li><a class="waves-effect waves-light btn">Sign In/Sign up</a></li>
+      </ul>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Staff Picks</a></li>
         <li><a href="#">Top Stories</a></li>
-        <li><a href="#">Login</a></li>
       </ul>
-
+      
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -74,7 +88,7 @@
             <div class="col s12 m6">
               <!--<div class="icon-block">-->
                 <!-- <h2 class="center light-blue-text"><i class="material-icons">group</i></h2> -->
-                <h5 class="left blue-grey-text text-darken-4">กลับสู่แดนสวรรค์แคชเมียร์ สำรวจเส้นทางใหม่ที่ศรีนาคา- ซันสการ์</h5>
+                <h5 class="blue-grey-text text-darken-4">กลับสู่แดนสวรรค์แคชเมียร์ สำรวจเส้นทางใหม่ที่ศรีนาคา- ซันสการ์</h5>
                 <h6 class="blue-grey-text text-lighten-3">BY NOTJUSTNUT ON 08/08/2015</h6>
                 <p class="light">หลังจากที่คราวที่แล้ว เขียนบทความประกอบภาพถ่าย สู่ดินแดนทิเบตน้อย  Leh Ladakh ไป กลับมาคราวนี้ ยังคงอยู่ที่อินเดียเหนือในแคว้น Jammu และ Kashmir  อีกเช่นเคย แต่เป็นเส้นทางที่ต่างออกไป แถมยังสวยงามไม่แพ้เมืองยอดฮิตอย่างเลห์อีกต่างหาก... Read More</p>
               <!--</div>-->
@@ -89,6 +103,39 @@
               </div>
             </div> -->
           </div>
+           <!--  Story feeds  -->
+          <div class="row">
+            <!-- Story: Picture-->
+            <div class="col s12 m6">
+              <div class="icon-block">
+                <img class="responsive-img" src="img/topcontent2.png">
+              </div>
+            </div>
+            <!-- Story: Content -->
+            <div class="col s12 m6">
+                <h5 class="blue-grey-text text-darken-4">เที่ยวไปถ่ายไป 7 วันในโครเอเชีย</h5>
+                <h6 class="blue-grey-text text-lighten-3">BY CULTURED CREATURES ON 05/08/2015</h6>
+                <p class="light">Hello again Croatia! ทริปนี้เกิดขึ้นหลังจากทริปแรกที่พวกเราเคยได้ล่องเรือ เที่ยวทะเลเมดิเตอร์เรเนียน แล้วเรือเทียบท่าเพื่อให้พวกเราได้แวะชมเมืองดูบรอฟนิค (Dubrovnik) ที่โครเอเชียครึ่งวัน หลังจากครึ่งวันนั้น พวกเราตัดสินใจว่าจะต้องกลับมาเที่ยวที่นี่อีดเป็นครั้งที่สองให้ได้... Read More</p>
+              <!--</div>-->
+            </div>
+          </div>
+          
+          <div class="row">
+            <!-- Story: Picture-->
+            <div class="col s12 m6">
+              <div class="icon-block">
+                <img class="responsive-img" src="img/topcontent3.png">
+              </div>
+            </div>
+            <!-- Story: Content -->
+            <div class="col s12 m6">
+                <h5 class="blue-grey-text text-darken-4">ลอนดอน 2 เดือนไปไหนได้บ้าง? London Checklist</h5>
+                <h6 class="blue-grey-text text-lighten-3">BY CULTURED CREATURES ON 12/07/2015</h6>
+                <p class="light">ก่อนจะเป็นทริป 2 เดือนในแบบของเราทริปนี้ เราตัดสินใจลัดฟ้ามาลอนดอนด้วยเหตุผลคือ การปิดเทอม 6 เดือนแบบยาวๆ ต้องหาอะไรให้ตัวเองไม่ว่างแล้วละ พอคิดได้เราเลยคิดว่ามีที่นึงที่อยากเอาตัวเองไปลองใช้ชีวิตดูนั่นคือ ลอนดอน อยากรู้ว่า... Read More</p>
+              <!--</div>-->
+            </div>
+          </div>
+          
         </div>
         
         <!-- Right Side Bar -->
@@ -96,12 +143,18 @@
         <div class="toc-wrapper">
           <div style="height: 1px;">
             <ul class="section table-of-contents blue-grey lighten-5">
-              <li><a href="#grid-container">Container</a></li>
-              <li><a href="#grid-intro">Introduction</a></li>
-              <li><a href="#grid-offsets">Offsets</a></li>
-              <li><a href="#grid-push">Push and Pull</a></li>
-              <li><a href="#grid-layouts">Creating Layouts</a></li>
-              <li><a href="#grid-responsive">Responsive Layouts</a></li>
+              <li><a href="#grid-container"><i class="small material-icons">directions_bus</i><span>Bus</span></a></li>
+              <li><a href="#grid-intro"><i class="small material-icons">directions_bike</i><span>Bike</span></a></li>
+              <li><a href="#grid-offsets"><i class="small material-icons">flight</i><span>Plane</span></a></li>
+              <li><a href="#grid-push"><i class="small material-icons">drive_eta</i><span>Car</span></a></li>
+              <div class="divider"></div>
+              <li><a href="#grid-layouts"><i class="small material-icons">wb_sunny</i>Nature</a></li>
+              <li><a href="#grid-responsive"><i class="small material-icons">photo_camera</i>Sightseeing</a></li>
+              <div class="divider"></div>
+              <li><div class="chip">Asia<i class="material-icons">close</i></div></li>
+              <li><div class="chip">Hiking<i class="material-icons">close</i></div></li>
+              <li><div class="chip">Nature<i class="material-icons">close</i></div></li>
+              <li><div class="chip">Sunset<i class="material-icons">close</i></div></li>
             </ul>
           </div>
         </div>
